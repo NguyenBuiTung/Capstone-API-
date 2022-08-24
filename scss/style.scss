@@ -1,0 +1,339 @@
+@import './base/base';
+@import './themes/varialble';
+//header index
+.index-header {
+    background-color: $bg-dark;
+    padding: 10px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+        }
+        .header-right {
+            img {
+            }
+            .login {
+                color: $text-c1-light;
+                font-weight: $text-ligt;
+                font-size: $text-base;
+                line-height: 19px;
+                border: 1px solid #000000;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                margin-right: 15px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .resgister {
+                color: $text-c1-light;
+                font-weight: $text-ligt;
+                font-size: $text-base;
+                line-height: 19px;
+                border: 1px solid #000000;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .text {
+                font-weight: $text-ligt;
+                font-size: $text-3xl;
+                line-height: 36px;
+                color: $text-c1-light;
+                vertical-align: middle;
+                padding-right: 10px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.index-navbar {
+    .container {
+        margin-top: 16px;
+        a {
+            font-weight: $text-regular;
+            font-size: $text-2xl;
+            line-height: 24px;
+            color: #000000;
+            text-decoration: none;
+            margin-right: 24px;
+            opacity: 0.7;
+        }
+        .home {
+            opacity: 1;
+        }
+    }
+}
+.index-carousel {
+    background: #ffffff;
+    // position: relative;
+    background-image: url(../img/image\ 6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: local;
+    // .bg-carousel {
+    //     position: absolute;
+    //     width: 1334px;
+    //     height: 393px;
+    //     left: -36px;
+    //     top: 107px;
+
+    // }
+    .container {
+        .carousel {
+            .carousel-indicators {
+                button {
+                    width: 15px;
+                    height: 15px;
+                    left: 597px;
+                    top: 397px;
+                    border: 1px solid rgba(0, 0, 0, 0.13);
+                    border-radius: 50%;
+                }
+            }
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                    }
+                    .carousel-caption {
+                        top: 50%;
+                        left: 79%;
+                        transform: translate(-50%, -50%);
+                        //    padding: 0;
+                        text-align: left;
+                        right: 0;
+                        bottom: 0;
+                        h5 {
+                            font-weight: 300;
+                            font-size: 40px;
+                            line-height: 48px;
+                            color: #000000;
+                        }
+                        p {
+                            font-weight: 300;
+                            font-size: 20px;
+                            line-height: 24px;
+
+                            color: #000000;
+                        }
+                        .button {
+                            @include button(
+                                $text-2xl,
+                                $text-ligt,
+                                $text-c1-light,
+                                $bg-button,
+                                13px 35px,
+                                none,
+                                none,
+                                $bg-c1-primary,
+                                red
+                            );
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev {
+                .carousel-control-prev-icon {
+                    background-image: none;
+                    i {
+                        font-size: $text-4xl;
+                        color: $text-c1-dark;
+                    }
+                }
+                .visually-hidden {
+                }
+            }
+            .carousel-control-next {
+                .carousel-control-next-icon {
+                    background-image: none;
+                    i {
+                        font-size: $text-4xl;
+                        color: $text-c1-dark;
+                    }
+                }
+                .visually-hidden {
+                }
+            }
+        }
+    }
+}
+.index-product {
+    .container {
+        h5 {
+            font-weight: 400;
+            font-size: $text-4xl;
+            line-height: 48px;
+            color: #000000;
+            text-align: center;
+            margin-top: 46px;
+            margin-bottom: 89px;
+        }
+        .product {
+            .col-4 {
+                padding-top: calc(var(--bs-gutter-x) * 0.5);
+                padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+                // margin-top: var(--bs-gutter-y);
+                .item {
+                    background-color: #f8f8f8;
+                    text-align: center;
+                    img {
+                        padding: 45px 57px;
+                        max-width: 100%;
+                    }
+                    .card-body {
+                        text-align: left;
+                        h1 {
+                            font-weight: 300;
+                            font-size: 24px;
+                            line-height: 29px;
+                            /* identical to box height */
+                            color: #000000;
+                        }
+                        p {
+                            font-weight: 300;
+                            font-size: 20px;
+                            line-height: 24px;
+
+                            color: #cbc9c9;
+                        }
+                    }
+                    .card-button {
+                        display: flex;
+                        align-items: center;
+                        background: #dedddc;
+                        button {
+                            a {
+                                text-decoration: none;
+                                color: $text-c1-dark;
+                            }
+                            width: 50%;
+                            @include button(
+                                $text-2xl,
+                                $text-ligt,
+                                $text-c1-dark,
+                                $bg-button,
+                                13px 35px,
+                                none,
+                                none,
+                                $bg-c1-primary,
+                                red
+                            );
+                        }
+                    }
+
+                    span {
+                        width: 50%;
+                        flex: 1;
+
+                        padding: 13px 35px;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 29px;
+                        /* identical to box height */
+
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.index-footer {
+    margin-top: 104px;
+    img {
+        width: 100%;
+    }
+}
+// detail
+.detail-carousel {
+    margin-top: 58px;
+    .container {
+        display: flex;
+        .carousel-left {
+            display: flex;
+            align-items: center;
+            background: #f8f8f8;
+            width: 30%;
+            text-align: center;
+            margin-right: 128px;
+            img {
+                max-width: 100%;
+                padding: 45px 57px;
+            }
+        }
+        .carousel-right {
+            width: 70%;
+            h4 {
+                font-weight: $text-ligt;
+                font-size: $text-3xl;
+                line-height: 36px;
+                color: #000000;
+            }
+            p {
+                font-weight: $text-regular;
+                font-size: $text-base;
+                line-height: 19px;
+                color: #140101;
+            }
+            .available {
+                font-weight: $text-regular;
+                font-size: 24px;
+                line-height: 29px;
+                color: #1ed90e;
+            }
+            .size {
+                margin-top: 28px;
+                button {
+                    background: #cccccc;
+                    font-weight: $text-semibold;
+                    font-size: 24px;
+                    line-height: 29px;
+                    /* identical to box height */
+                    color: #1e1d1d;
+                    padding: 11px 10px;
+                    margin-right: 21px;
+                }
+            }
+            .price {
+                font-weight: $text-semibold;
+                font-size: $text-3xl;
+                line-height: 36px;
+                color: #fc0303;
+                margin: 17px 0;
+                display: inline-block;
+            }
+            .nextprev {
+                margin-bottom: 7px;
+                button {
+                    background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+                    font-weight: $text-regular;
+                    font-size: $text-3xl;
+                    line-height: 36px;
+                    color: #fffcfc;
+                    padding: 7px 15px;
+                    border: none;
+                    text-align: center;
+                }
+                span {
+                    margin: 0 20px;
+                    display: inline-block;
+                    font-weight: 400;
+                    font-size: $text-3xl;
+                    line-height: 36px;
+                    color: #000000;
+                }
+            }
+            .add {
+                background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #d017ee 89.71%);
+               padding: 18px 24px;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                color: #fff8f8;
+                border: none;
+            }
+        }
+    }
+}

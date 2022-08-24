@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.index-header {
+  background-color: #000;
+  padding: 10px 0;
+}
+.index-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index-header .container .header-right .login {
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.index-header .container .header-right .resgister {
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  cursor: pointer;
+}
+.index-header .container .header-right .text {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  vertical-align: middle;
+  padding-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.index-navbar .container {
+  margin-top: 16px;
+}
+.index-navbar .container a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 24px;
+  opacity: 0.7;
+}
+.index-navbar .container .home {
+  opacity: 1;
+}
+
+.index-carousel {
+  background: #ffffff;
+  background-image: url(../img/image\ 6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: local;
+}
+.index-carousel .container .carousel .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  left: 597px;
+  top: 397px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 50%;
+}
+.index-carousel .container .carousel .carousel-inner .carousel-item .carousel-caption {
+  top: 50%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  right: 0;
+  bottom: 0;
+}
+.index-carousel .container .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+.index-carousel .container .carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.index-carousel .container .carousel .carousel-inner .carousel-item .carousel-caption .button {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  background: #F8B653;
+  padding: 13px 35px;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+}
+.index-carousel .container .carousel .carousel-inner .carousel-item .carousel-caption .button:hover {
+  background: #2a73dd;
+  color: red;
+}
+.index-carousel .container .carousel .carousel-control-prev .carousel-control-prev-icon {
+  background-image: none;
+}
+.index-carousel .container .carousel .carousel-control-prev .carousel-control-prev-icon i {
+  font-size: 40px;
+  color: #000;
+}
+.index-carousel .container .carousel .carousel-control-next .carousel-control-next-icon {
+  background-image: none;
+}
+.index-carousel .container .carousel .carousel-control-next .carousel-control-next-icon i {
+  font-size: 40px;
+  color: #000;
+}
+.index-product .container h5 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  text-align: center;
+  margin-top: 46px;
+  margin-bottom: 89px;
+}
+.index-product .container .product .col-4 {
+  padding-top: calc(var(--bs-gutter-x) * 0.5);
+  padding-bottom: calc(var(--bs-gutter-x) * 0.5);
+}
+.index-product .container .product .col-4 .item {
+  background-color: #f8f8f8;
+  text-align: center;
+}
+.index-product .container .product .col-4 .item img {
+  padding: 45px 57px;
+  max-width: 100%;
+}
+.index-product .container .product .col-4 .item .card-body {
+  text-align: left;
+}
+.index-product .container .product .col-4 .item .card-body h1 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #000000;
+}
+.index-product .container .product .col-4 .item .card-body p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #cbc9c9;
+}
+.index-product .container .product .col-4 .item .card-button {
+  display: flex;
+  align-items: center;
+  background: #dedddc;
+}
+.index-product .container .product .col-4 .item .card-button button {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+  background: #F8B653;
+  padding: 13px 35px;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+}
+.index-product .container .product .col-4 .item .card-button button a {
+  text-decoration: none;
+  color: #000;
+}
+.index-product .container .product .col-4 .item .card-button button:hover {
+  background: #2a73dd;
+  color: red;
+}
+.index-product .container .product .col-4 .item span {
+  width: 50%;
+  flex: 1;
+  padding: 13px 35px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.index-footer {
+  margin-top: 104px;
+}
+.index-footer img {
+  width: 100%;
+}
+
+.detail-carousel {
+  margin-top: 58px;
+}
+.detail-carousel .container {
+  display: flex;
+}
+.detail-carousel .container .carousel-left {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  width: 30%;
+  text-align: center;
+  margin-right: 128px;
+}
+.detail-carousel .container .carousel-left img {
+  max-width: 100%;
+  padding: 45px 57px;
+}
+.detail-carousel .container .carousel-right {
+  width: 70%;
+}
+.detail-carousel .container .carousel-right h4 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+.detail-carousel .container .carousel-right p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #140101;
+}
+.detail-carousel .container .carousel-right .available {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1ed90e;
+}
+.detail-carousel .container .carousel-right .size {
+  margin-top: 28px;
+}
+.detail-carousel .container .carousel-right .size button {
+  background: #cccccc;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #1e1d1d;
+  padding: 11px 10px;
+  margin-right: 21px;
+}
+.detail-carousel .container .carousel-right .price {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fc0303;
+  margin: 17px 0;
+  display: inline-block;
+}
+.detail-carousel .container .carousel-right .nextprev {
+  margin-bottom: 7px;
+}
+.detail-carousel .container .carousel-right .nextprev button {
+  background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fffcfc;
+  padding: 7px 15px;
+  border: none;
+  text-align: center;
+}
+.detail-carousel .container .carousel-right .nextprev span {
+  margin: 0 20px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+.detail-carousel .container .carousel-right .add {
+  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #d017ee 89.71%);
+  padding: 18px 24px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff8f8;
+  border: none;
+}
