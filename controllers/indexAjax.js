@@ -1,6 +1,6 @@
 //Code các chức năng thao tác vs dũ liệu từ Backend
 //GET:Lấy thông tin từ sever và hiển thị lên table tbody
-async function getData() {
+export async function getData() {
     try {
         let result = await axios({
             url: 'https://shop.cyberlearn.vn/api/Product',//Đường dẫn BE cung cấp
@@ -12,28 +12,27 @@ async function getData() {
         let output = "";
         for (let item of dataRender) {
             console.log(item)
-   
-
+            // console.log(dataRender[item])
             let renderItem = `
             <div class="col-4">
                         <div class="item">
-                            <img src="./img/image 5.png" alt="" />
+                            <img src="${item.image}" alt="" />
                             <div class="card-body">
                                 <h1>${item.name}</h1>
                                 <p>${item.description}</p>
                             </div>
-                            <div class="card-button">
-                                <button><a href="./detail.html?productid=${item.id}">Buy now</a></button>
-                                <span>85$</span>
-                            </div>
                         </div>
+                        <div class="card-button">
+                                <button><a href="./detail.html?productid=${item.id}">Buy now</a></button>
+                                <span>${item.price}$</span>
+                            </div>
                     </div>
             `;
             output += renderItem
         }
         document.querySelector(".product").innerHTML = output
 
-        console.log(dataRender)
+        // console.log(dataRender)
     } catch (err) {
         console.log(err)
     }

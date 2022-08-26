@@ -142,10 +142,48 @@
   margin-bottom: 89px;
 }
 .index-product .container .product .col-4 {
+  display: flex;
+  flex-direction: column;
   padding-top: calc(var(--bs-gutter-x) * 0.5);
   padding-bottom: calc(var(--bs-gutter-x) * 0.5);
 }
+.index-product .container .product .col-4 .card-button {
+  display: flex;
+  align-items: center;
+  background: #dedddc;
+}
+.index-product .container .product .col-4 .card-button button {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+  background: #F8B653;
+  padding: 13px 35px;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+}
+.index-product .container .product .col-4 .card-button button a {
+  text-decoration: none;
+  color: #000;
+}
+.index-product .container .product .col-4 .card-button button:hover {
+  background: #2a73dd;
+  color: red;
+}
+.index-product .container .product .col-4 .card-button span {
+  width: 50%;
+  flex: 1;
+  padding: 13px 35px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #000000;
+  text-align: center;
+}
 .index-product .container .product .col-4 .item {
+  flex: 1;
   background-color: #f8f8f8;
   text-align: center;
 }
@@ -169,40 +207,6 @@
   line-height: 24px;
   color: #cbc9c9;
 }
-.index-product .container .product .col-4 .item .card-button {
-  display: flex;
-  align-items: center;
-  background: #dedddc;
-}
-.index-product .container .product .col-4 .item .card-button button {
-  width: 50%;
-  font-size: 20px;
-  font-weight: 300;
-  color: #000;
-  background: #F8B653;
-  padding: 13px 35px;
-  border: none;
-  border-radius: none;
-  cursor: pointer;
-}
-.index-product .container .product .col-4 .item .card-button button a {
-  text-decoration: none;
-  color: #000;
-}
-.index-product .container .product .col-4 .item .card-button button:hover {
-  background: #2a73dd;
-  color: red;
-}
-.index-product .container .product .col-4 .item span {
-  width: 50%;
-  flex: 1;
-  padding: 13px 35px;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  /* identical to box height */
-  color: #000000;
-}
 
 .index-footer {
   margin-top: 104px;
@@ -216,6 +220,7 @@
 }
 .detail-carousel .container {
   display: flex;
+  flex-wrap: nowrap;
 }
 .detail-carousel .container .carousel-left {
   display: flex;

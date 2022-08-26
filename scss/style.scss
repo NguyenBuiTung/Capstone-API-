@@ -171,10 +171,46 @@
         }
         .product {
             .col-4 {
+                display: flex;
+                flex-direction: column;
                 padding-top: calc(var(--bs-gutter-x) * 0.5);
                 padding-bottom: calc(var(--bs-gutter-x) * 0.5);
-                // margin-top: var(--bs-gutter-y);
+                .card-button {
+                    display: flex;
+                    align-items: center;
+                    background: #dedddc;
+                    button {
+                        a {
+                            text-decoration: none;
+                            color: $text-c1-dark;
+                        }
+                        width: 50%;
+                        @include button(
+                            $text-2xl,
+                            $text-ligt,
+                            $text-c1-dark,
+                            $bg-button,
+                            13px 35px,
+                            none,
+                            none,
+                            $bg-c1-primary,
+                            red
+                        );
+                    }
+                    span {
+                        width: 50%;
+                        flex: 1;
+                        padding: 13px 35px;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 29px;
+                        /* identical to box height */
+                        color: #000000;
+                        text-align: center;
+                    }
+                }
                 .item {
+                   flex: 1;
                     background-color: #f8f8f8;
                     text-align: center;
                     img {
@@ -194,45 +230,9 @@
                             font-weight: 300;
                             font-size: 20px;
                             line-height: 24px;
-
                             color: #cbc9c9;
+                            // flex: 1;
                         }
-                    }
-                    .card-button {
-                        display: flex;
-                        align-items: center;
-                        background: #dedddc;
-                        button {
-                            a {
-                                text-decoration: none;
-                                color: $text-c1-dark;
-                            }
-                            width: 50%;
-                            @include button(
-                                $text-2xl,
-                                $text-ligt,
-                                $text-c1-dark,
-                                $bg-button,
-                                13px 35px,
-                                none,
-                                none,
-                                $bg-c1-primary,
-                                red
-                            );
-                        }
-                    }
-
-                    span {
-                        width: 50%;
-                        flex: 1;
-
-                        padding: 13px 35px;
-                        font-weight: 600;
-                        font-size: 24px;
-                        line-height: 29px;
-                        /* identical to box height */
-
-                        color: #000000;
                     }
                 }
             }
@@ -251,6 +251,7 @@
     margin-top: 58px;
     .container {
         display: flex;
+        flex-wrap: nowrap;
         .carousel-left {
             display: flex;
             align-items: center;
