@@ -1,7 +1,10 @@
-import {getData} from './indexAjax.js'
+import {getData as detail} from './indexAjax.js'
 window.onload = function () {
-    //Gọi api lấy data từ backend
-    getData()
+    const urlParams = new URLSearchParams(window.location.search)
+    const myParam = urlParams.get('productid')
+    // console.log('first', myParam)
+    getData(myParam)
+    detail()
 }
 async function getData(myParam) {
     // console.log("tung", myParam)
@@ -47,10 +50,5 @@ async function getData(myParam) {
         console.log(error)
     }
 }
-window.onload = function () {
-    const urlParams = new URLSearchParams(window.location.search)
-    const myParam = urlParams.get('productid')
-    // console.log('first', myParam)
-    getData(myParam)
-}
+
 
